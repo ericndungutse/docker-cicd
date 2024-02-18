@@ -6,6 +6,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/products", (req, res) => {
+  console.log("************************", process.env.NODE_ENV);
   const products = [
     {
       id: 1,

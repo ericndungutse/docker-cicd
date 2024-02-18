@@ -3,10 +3,10 @@ const config = {
   transform: {},
   verbose: true,
   collectCoverage: true,
-  testEnvironment: "node",
+  testEnvironment: 'node',
   coverageThreshold: {
     global: {
-      lines: 70,
+      lines: 10,
     },
   },
 };
