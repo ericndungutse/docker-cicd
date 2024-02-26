@@ -1,20 +1,19 @@
-const express = require("express");
+const express = require('express');
 const app = express();
 
-app.get("/", (req, res) => {
-  res.json("Hello World!");
+app.get('/', (req, res) => {
+  res.json('Hello From DOckerized App!');
 });
 
-app.get("/products", (req, res) => {
-  console.log("************************", process.env.NODE_ENV);
+app.get('/products', (req, res) => {
   const products = [
     {
       id: 1,
-      name: "A",
+      name: 'A',
     },
     {
       id: 2,
-      name: "b",
+      name: 'b',
     },
   ];
 

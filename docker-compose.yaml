@@ -5,18 +5,18 @@ services:
       # Where files and folders for this image are
       # going to come from
       context: .
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - '3000:3000'
     volumes:
       - /app/node_modules
       - .:/app
   tests:
     build:
       context: .
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile
     volumes:
       - /app/node_modules
       - .:/app
     # Overrites normal CMD in Dockerfile
-    command: ["npm", "run", "test"]
+    command: ['npm', 'run', 'test']
